@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form1{
+            border: 5px solid cyan;
+            width: 600px;
+            padding: 20px;
+        }
+        #form1 h2{
+            color: white;
+            background-color: orangered;
+            text-align: center;
+            margin-top: 0px;
+        }
+        #form1 div{
+            margin-left: 80px;
+        }
+        #form1 label{
+            color: orangered;
+            text-align: right;
+        }
+        #form1 #name,#form1 #email, #form1 #hobby{
+            color:blue;
+        }
+        #form1 #email{
+            margin-right: 5px;
+            margin-left: 20px;
+        }
+        #form1 #hobby{
+            margin-left: 10px;
+            vertical-align: top;
+        }
+        #form1 #hobby-line{
+            margin-left: 0;
+            display: inline-block; 
+        }
+        #form1 #button{
+            margin-top: 10px;
+            margin-left: 60px;
+        }
+        #form2{
+            background-color: lightyellow;
+            width: 600px;
+            padding: 5px;
+            margin-top: 20px;
+        }
+        #form2 h2{
+            color: blue;
+            background-color: cyan;
+            margin-top: 10px;
+        }
+        #form2 label{
+            color: blue;
+            margin-right: 40px;
+        }
+        #form2 #male, #form2 #female{
+            color: black;
+        }
+        textarea{
+            resize: none;
+        }
+        #form2 #address{
+            vertical-align: top;
+        }
+        #form2 input, #form2 select{
+            position: absolute;
+            left: 100px;
+        }
+        #form2 #radiofemale{
+           left: 170px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" id="form1">
+        <h2>SỞ THÍCH CỦA BẠN</h2>
+        <div>  
+            <label id="name" for="yourname">Họ và tên</label>
+            <input type="text" name="yourname"> <br> <br>
+            <label id="email" for="email">Email</label>
+            <input type="text" name="email"> <br> <br>
+            <label id="hobby" for="hobby">Sở thích</label>
+            <div id="hobby-line">
+                <input type="checkbox" name="hobby" id="hobby" value="thethao">
+                <label for="hobby">Thể thao</label>&nbsp;
+                <input type="checkbox" name="hobby" id="hobby" value="amnhac">
+                <label for="hobby">Âm nhạc</label>&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="hobby" id="hobby" value="docsach">
+                <label for="hobby">Đọc sách</label><br>
+                <input type="checkbox" name="hobby" id="hobby" value="luotweb">
+                <label for="hobby">Lướt web</label>
+                <input type="checkbox" name="hobby" id="hobby" value="choigame">
+                <label for="hobby">Chơi game</label>
+                <input type="checkbox" name="hobby" id="hobby" value="dienanh">
+                <label for="hobby">Điện ảnh</label><br>
+                <input type="checkbox" name="hobby" id="hobby" value="dulich">
+                <label for="hobby">Du lịch</label>
+            </div>
+            <div id="button">
+                <button type="submit">Gửi thông tin</button>
+                <button type="reset">Nhập lại</button>
+            </div> 
+        </div>
+    </form>
+    <form action="" id="form2">
+        <h2>ĐĂNG KÝ HỌC VIÊN</h2>
+       <label for="name">Họ và tên</label>
+       <input type="text" name="name"><br><br>
+       <label for="birthday">Ngày sinh</label>
+       <input type="text" name="birthday"><br><br>
+       <label for="gender" >Giới tính</label>
+       <input type="radio" value="male" name="gender">&nbsp;
+       <label for="gender" id="male">Nam</label>
+       <input type="radio" value="female" name="gender" id="radiofemale">
+       <label for="gender" id="female">Nữ</label><br><br>
+       <label for="address" id="address">Địa chỉ</label>
+       <textarea name="address" id="" cols="30" rows="5"></textarea><br><br>
+       <label for="class">Lớp</label>
+       <select name="class" id="select">
+        <option value="">--Chọn lớp--</option>
+        <option value="classA">Lớp A</option>
+        <option value="classB">Lớp B</option>
+        <option value="classC">Lớp C</option>
+       </select><br><br>
+       <label for="email">Email</label>
+       <input type="text" name="email"><br><br>
+       <label for="phone">Điện thoại</label>
+       <input type="text" name="phone"><br><br>
+       <div id="">
+        <button type="submit">Đăng ký</button>
+        <button type="reset">Nhập lại</button>
+        </div> 
+    </form>
+</body>
+</html>
